@@ -7,7 +7,7 @@ using namespace std;
 
 
 int main() {
-
+    
     int n, q;
     cin >> n >> q;
     vector<int> a[n];
@@ -20,21 +20,11 @@ int main() {
             a[i].push_back(input);
         }
     }
-
-    int ij[q][2];   
-    for (int i = 0; i < q; i++){
-        for (int j = 0; j < 2; j++){
-            cin >> ij[i][j];
-        }
-    }
     
     for (int l = 0; l < q; l++){
-        int y;
         int i, j;
-        i = ij[l][0];
-        j = ij[l][1];
-        y = (a[i])[j];
-        cout << y << endl;
+        cin >> i >> j;
+        cout << (a[i])[j] << endl;
     }
 
     return 0;
